@@ -1,0 +1,11 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "GeicoScenario", "GeicoScenario\GeicoScenario.shproj", "{D12A8EF9-9CDD-4F40-912F-106236A88A66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+	EndGlobalSection
+EndGlobal
