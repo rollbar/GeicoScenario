@@ -44,9 +44,10 @@ namespace GeicoScenario
 
         public static void Main()
         {
+            RollbarQueueController.Instance.InternalEvent += OnRollbarInternalEvent;
+
             while (true)
             {
-                RollbarQueueController.Instance.InternalEvent += OnRollbarInternalEvent;
                 try
                 {
                     int value = 1 / int.Parse("0");
