@@ -20,6 +20,9 @@ namespace GeicoScenario
             if (apiErrorEvent != null)
             {
                 //TODO: handle/report Rollbar API communication error event...
+                
+                // let's save apiErrorEvent.TraceAsString() result into appErrors.log file or somewhere else.
+                
                 return;
             }
             CommunicationEventArgs commEvent = e as CommunicationEventArgs;
@@ -32,12 +35,18 @@ namespace GeicoScenario
             if (commErrorEvent != null)
             {
                 //TODO: handle/report basic communication error while attempting to reach Rollbar API service... 
+
+                // let's save commErrorEvent.TraceAsString() result into commErrors.log file or somewhere else.
+                
                 return;
             }
             InternalErrorEventArgs internalErrorEvent = e as InternalErrorEventArgs;
             if (internalErrorEvent != null)
             {
                 //TODO: handle/report basic internal error while using the Rollbar Notifier... 
+
+                // let's save internalErrorEvent.TraceAsString() result into internalErrors.log file or somewhere else.
+                
                 return;
             }
         }
