@@ -46,13 +46,6 @@ namespace GeicoScenario
         {
             while (true)
             {
-                const string postServerItemAccessToken = "INVALID";
-                // ProxyAddress = "10.128.0.5:3128"
-                RollbarLocator.RollbarInstance.Configure(
-                                                         new RollbarConfig(postServerItemAccessToken)
-                                                         {
-                                                             Environment = "development",
-                                                         }).InternalEvent += OnRollbarInternalEvent;
                 RollbarQueueController.Instance.InternalEvent += OnRollbarInternalEvent;
                 try
                 {
